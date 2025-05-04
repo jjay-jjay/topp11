@@ -3,16 +3,10 @@
         {
             "src": "package.json",
             "use": "@vercel/static-build",
+            "buildCommand": "vite build",
             "config": {
-                "distDir": "dist",
-                "buildCommand": "vite build"
+                "distDir": "dist"
             }
-        }
-    ],
-    "routes": [
-        {
-            "src": "/(.*)",
-            "dest": "/$1"
         }
     ]
 }
